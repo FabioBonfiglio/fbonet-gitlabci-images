@@ -6,9 +6,10 @@ stages:
 
 build_image:
   stage: build
-  image: docker:git
+  image: docker
   services:
     - docker:dind
+  entrypoint: [""]
   only:
     - merge_requests
   script:
