@@ -10,7 +10,14 @@ stages:
   - build
   - test
 
-build_image:
+build_shell:
+  stage: build
+  tags:
+    - bash
+  script:
+    - docker build .
+
+.build_image:
   stage: build
   only:
     - merge_requests
@@ -23,7 +30,7 @@ build_image:
       - stuck_or_timeout_failure
       - runner_unsupported
 
-fetch_versions:
+.fetch_versions:
   stage: test
   only:
     - merge_requests
