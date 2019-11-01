@@ -7,10 +7,10 @@ Various builds and testing environments for Gitlab CI/CD
 ## Images
 ### Master
 Contains, in latest versions :
-* [ ] Ubuntu bionic
-* [ ] Curl
-* [ ] Node / npm
-* [ ] Solc
-* [ ] Truffle
-* [ ] Solgraph
-* [ ] graphviz
+* [x] Ubuntu bionic
+* [x] Curl
+* [x] Node / npm
+* [x] Solc
+* [x] Truffle
+* [x] Solgraph
+* [x] graphviz

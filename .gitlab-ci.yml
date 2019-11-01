@@ -1,0 +1,19 @@
+default:
+  image: docker:dind
+
+stages:
+  - build
+  - test
+
+build_image:
+  stage: build
+  only:
+    - merge_requests
+  script:
+    - docker build .
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+      - runner_unsupported
