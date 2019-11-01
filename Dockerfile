@@ -24,8 +24,8 @@ RUN apt-get update && \
 	apt-get update && \
 	apt-get install -y solc
 
-# Install graphviz, curl, nodejs, truffle and solgraph
-RUN apt-get install -y graphviz curl && \
+# Install graphviz, curl, git, make, g++, nodejs, truffle and solgraph
+RUN apt-get install -y graphviz curl git make g++ && \
 	curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
 	apt-get install -y nodejs
 
@@ -34,8 +34,9 @@ FROM ubusolnode AS fbonetci
 USER root
 
 RUN npm install -g --unsafe-perm=true --allow-root truffle && \
-	npm install -g --unsafe-perm=true --allow-root @truffle/hdwallet-provider && \
-	npm install -g --unsafe-perm=true --allow-root solgraph
+	npm install -g --unsafe-perm=true --allow-root @truffle/hdwallet-provider
+	
+RUN npm install -g --unsafe-perm=true --allow-root solgraph
 	
 WORKDIR /src
 

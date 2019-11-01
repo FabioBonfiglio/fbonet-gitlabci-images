@@ -2,15 +2,17 @@
 
 # FBOnet GitlabCI images
 
-Various builds and testing environments for Gitlab CI/CD
+Various builds and testing environments for Gitlab CI/CD.  
+Automatically built to :whale: [fbonet/gitlabci](https://cloud.docker.com/u/fbonet/repository/docker/fbonet/gitlabci).
 
 ## Images
-### Master
+### `master`
 Contains, in latest versions :
 * [x] Ubuntu bionic
 * [x] Curl
 * [x] Node / npm
 * [x] Solc
 * [x] Truffle
+* [x] @truffle/hdwallet-provider
 * [x] Solgraph
 * [x] graphviz
