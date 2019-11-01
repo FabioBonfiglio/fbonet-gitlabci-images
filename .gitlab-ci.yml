@@ -1,5 +1,5 @@
 default:
-  image: docker:dind
+  image: docker
 
 stages:
   - build
