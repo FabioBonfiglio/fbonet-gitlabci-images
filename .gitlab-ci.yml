@@ -4,8 +4,7 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay2
-  DOCKER_TLS_CERTDIR: ""
-  DOCKER_HOST: 2376
+  DOCKER_TLS_VERIFY: 1
 
 stages:
   - build
