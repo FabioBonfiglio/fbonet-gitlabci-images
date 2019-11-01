@@ -38,4 +38,4 @@ RUN npm install -g --unsafe-perm=true --allow-root truffle && \
 	
 WORKDIR /src
 
-ENTRYPOINT ["/bin/sh", "-c"]
+CMD ["/bin/bash"]
