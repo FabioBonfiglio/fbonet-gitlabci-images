@@ -16,4 +16,4 @@ Contains, in latest versions :
 * [x] @truffle/hdwallet-provider
 * [x] Solgraph
 * [x] graphviz
-* [ ] ganache-cli
+* [x] ganache-cli

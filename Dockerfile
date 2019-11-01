@@ -33,11 +33,16 @@ FROM ubusolnode AS fbonetci
 
 USER root
 
+# Install truffle
 RUN npm install -g --unsafe-perm=true --allow-root truffle && \
 	npm install -g --unsafe-perm=true --allow-root @truffle/hdwallet-provider
-	
+
+# Install ganache-cli
+RUN npm install -g --unsafe-perm=true --allow-root 
+
+# Install solgraph
 RUN npm install -g --unsafe-perm=true --allow-root solgraph
-	
+
 WORKDIR /src
 
 CMD ["/bin/bash"]
