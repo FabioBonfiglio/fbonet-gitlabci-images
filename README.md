@@ -3,7 +3,7 @@
 # FBOnet GitlabCI images
 
 Various builds and testing environments for Gitlab CI/CD.  
-Automatically built to :whale: [fbonet/gitlabci](https://cloud.docker.com/u/fbonet/repository/docker/fbonet/gitlabci).
+Automatically built to :whale: [fbonet/gitlabci](https://hub.docker.com/r/fbonet/gitlabci).
 
 ## Images
 ### `master`
