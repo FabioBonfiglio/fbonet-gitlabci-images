@@ -22,3 +22,11 @@ build_image:
       - runner_system_failure
       - stuck_or_timeout_failure
       - runner_unsupported
+
+fetch_versions:
+  stage: test
+  dependencies:
+    - build_image
+  script:
+    - docker build -t mycicdimage .
+    - docker run mycicdimage "solc --version; node -v; npm -v; truffle version"
