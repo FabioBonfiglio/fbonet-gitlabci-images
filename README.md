@@ -13,3 +13,4 @@ Contains, in latest versions :
 * [ ] Solc
 * [ ] Truffle
 * [ ] Solgraph
+* [ ] graphviz
