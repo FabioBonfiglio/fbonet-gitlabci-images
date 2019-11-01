@@ -2,7 +2,7 @@ stages:
   - build
   - test
 
-build_shell:
+.build_shell:
   stage: build
   tags:
     - bash
@@ -11,7 +11,7 @@ build_shell:
   script:
     - docker build .
 
-build_image:
+.build_image:
   stage: build
   tags:
     - docker
@@ -30,7 +30,7 @@ build_image:
       - stuck_or_timeout_failure
       - runner_unsupported
 
-fetch_versions:
+.fetch_versions:
   stage: test
   tags:
     - docker
