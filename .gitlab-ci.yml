@@ -25,8 +25,9 @@ build_image:
 
 fetch_versions:
   stage: test
-  dependencies:
-    - build_image
+  only:
+    - merge_requests
+  needs: ["build_image"]
   script:
     - docker build -t mycicdimage .
     - docker run mycicdimage "solc --version; node -v; npm -v; truffle version"
