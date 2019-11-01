@@ -38,7 +38,7 @@ RUN npm install -g --unsafe-perm=true --allow-root truffle && \
 	npm install -g --unsafe-perm=true --allow-root @truffle/hdwallet-provider
 
 # Install ganache-cli
-RUN npm install -g --unsafe-perm=true --allow-root 
+RUN npm install -g --unsafe-perm=true --allow-root ganache-cli
 
 # Install solgraph
 RUN npm install -g --unsafe-perm=true --allow-root solgraph
