@@ -9,7 +9,7 @@ build_shell:
   only:
     - merge_requests
   script:
-    - docker build .
+    - sudo docker build .
 
 .build_image:
   stage: build
