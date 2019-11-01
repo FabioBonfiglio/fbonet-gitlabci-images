@@ -34,6 +34,7 @@ FROM ubusolnode AS fbonetci
 USER root
 
 RUN npm install -g --unsafe-perm=true --allow-root truffle && \
+	npm install -g --unsafe-perm=true --allow-root @truffle/hdwallet-provider && \
 	npm install -g --unsafe-perm=true --allow-root solgraph
 	
 WORKDIR /src
