@@ -6,10 +6,11 @@ stages:
 
 build_image:
   stage: build
-  image: docker
+  image:
+    name: docker
+    entrypoint: [""]
   services:
     - docker:dind
-  entrypoint: [""]
   only:
     - merge_requests
   script:
