@@ -2,8 +2,8 @@
 
 # FBOnet GitlabCI images
 
-Various builds and testing environments for Gitlab CI/CD.  
-Automatically built to :whale: [fbonet/gitlabci](https://hub.docker.com/r/fbonet/gitlabci).
+Various builds and EVM smart contract testing environments for Gitlab CI/CD.  
+Automatically pushed to [github](https://github.com/FabioBonfiglio/fbonet-gitlabci-images) to trigger build on :whale: [fbonet/gitlabci](https://hub.docker.com/r/fbonet/gitlabci).
 
 ## Images
 ### `master`
