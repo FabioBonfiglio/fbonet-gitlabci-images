@@ -24,8 +24,8 @@ RUN apt-get update && \
 	apt-get update && \
 	apt-get install -y solc
 
-# Install graphviz, curl, git, make, g++, nodejs, truffle and solgraph
-RUN apt-get install -y graphviz curl git make g++ && \
+# Install graphviz, curl, git, make, g++, php and nodejs
+RUN apt-get install -y graphviz curl git make g++ php && \
 	curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
 	apt-get install -y nodejs
 
