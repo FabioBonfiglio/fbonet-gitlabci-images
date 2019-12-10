@@ -17,3 +17,4 @@ Contains, in latest versions :
 * [x] Solgraph
 * [x] graphviz
 * [x] ganache-cli
+* [x] php
