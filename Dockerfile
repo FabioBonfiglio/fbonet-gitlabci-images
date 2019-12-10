@@ -45,4 +45,7 @@ RUN npm install -g --unsafe-perm=true --allow-root solgraph
 
 WORKDIR /src
 
+# Install truffle/hdwallet-provider for require hook
+RUN npm install @truffle/hdwallet-provider
+
 CMD ["/bin/bash"]
