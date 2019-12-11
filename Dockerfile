@@ -17,6 +17,10 @@ LABEL maintainer="Fabio Bonfiglio <fabio.bonfiglio@fbo.network>"
 LABEL description="This image is used as a docker executor for Gitlab CI/CD of \
 Solidity smart contracts projects."
 
+# Install dev dependencies (workaround for missing security repos)
+RUN apt-get update && \
+	apt-get install -y libjpeg-turbo8-dev
+
 # Install latest solc
 RUN apt-get update && \
 	apt-get install -y software-properties-common && \
