@@ -29,7 +29,11 @@ RUN apt-get update && \
 	apt-get install -y solc
 
 # Install graphviz, curl, git, make, g++, php and nodejs
-RUN apt-get install -y graphviz curl git make g++ php && \
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN apt-get install -y tzdata
+RUN ln -fs /usr/share/zoneinfo/Europe/Bern /etc/localtime
+RUN dpkg-reconfigure --frontend noninteractive tzdata
+RUN apt-get install -y -q graphviz curl git make g++ php && \
 	curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
 	apt-get install -y nodejs
 
