@@ -7,7 +7,7 @@ Automatically pushed to [github](https://github.com/FabioBonfiglio/fbonet-gitlab
 
 ## Images
 ### `master`
-Contains, in latest versions :
+Contains, in latest version :
 * [x] Ubuntu bionic
 * [x] Curl
 * [x] Node / npm
@@ -18,3 +18,5 @@ Contains, in latest versions :
 * [x] graphviz
 * [x] ganache-cli
 * [x] php
+* [x] pandoc
+* [x] texlive
