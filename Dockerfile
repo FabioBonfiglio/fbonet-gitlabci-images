@@ -29,6 +29,10 @@ RUN apt-get install -y graphviz curl git make g++ php && \
 	curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
 	apt-get install -y nodejs
 
+# Install pandoc, latex and pdftex, with recommended fonts
+RUN apt-get install -y pandoc && \
+	apt-get install -y pandoc-citeproc texlive
+
 FROM ubusolnode AS fbonetci
 
 USER root
